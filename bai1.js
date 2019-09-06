@@ -1,12 +1,22 @@
-// tim so lon nhat trong chuoi so
-let num =[ 1, 3, 7, 5, 12, 18 ]
-let a, k = 0
-  for ( let i = 0; i <= num.length; i++ ){
-    if ( num[a] >= num[i] ){
-        k = num[a]
-    }else if ( a == num.length-1){
-        k = num[a]
-          }
-        else { a = i } 
-  } 
-console.log(k)
+// SUBJECT: Tim so lon nhat trong chuoi so
+
+const arr = [1, 3, 7, 5, 12, 18]
+
+function max(arr) {
+  let a = 0
+  let k = 0
+  
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[a] >= arr[i]) {
+      k = arr[a]
+    } else if (a === arr.length - 1) {
+      k = arr[a]
+    } else {
+      a = i
+    }
+  }
+}
+
+const result = max(arr)
+
+console.log(result)
