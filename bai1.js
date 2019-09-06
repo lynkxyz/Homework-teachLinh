@@ -15,6 +15,8 @@ function max(arr) {
       a = i
     }
   }
+  
+  return k
 }
 
 const result = max(arr)
